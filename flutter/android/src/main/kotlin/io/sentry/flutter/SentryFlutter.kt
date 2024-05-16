@@ -119,6 +119,8 @@ class SentryFlutter(
     data.getIfNotNull<Int>("readTimeoutMillis") {
       options.readTimeoutMillis = it
     }
+
+    options.isEnableRootCheck = false
   }
 }
 
