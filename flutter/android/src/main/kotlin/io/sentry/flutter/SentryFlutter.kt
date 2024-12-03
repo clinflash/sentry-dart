@@ -157,6 +157,8 @@ class SentryFlutter(
     data.getIfNotNull<Map<String, Any>>("replay") {
       updateReplayOptions(options.experimental.sessionReplay, it)
     }
+
+    options.isEnableRootCheck = false
   }
 
   fun updateReplayOptions(
