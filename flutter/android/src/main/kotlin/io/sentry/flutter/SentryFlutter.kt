@@ -183,6 +183,8 @@ class SentryFlutter {
         options.sessionReplay.sdkVersion = SdkVersion(it["name"] as String, it["version"] as String)
       }
     }
+
+    options.isEnableRootCheck = false
   }
 
   private fun updateReplayOptions(
